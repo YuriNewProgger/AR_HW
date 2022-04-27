@@ -1,0 +1,13 @@
+.targetDate{
+    color: red;
+    font-weight: bold;
+}
+
+.currentDate{
+    color: green;
+    font-weight: bold;
+}
+.separator{
+    font-size: 1.5em;
+    font-weight: bold;
+}
