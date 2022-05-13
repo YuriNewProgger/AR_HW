@@ -11,3 +11,7 @@
     font-size: 1.5em;
     font-weight: bold;
 }
+
+li {
+    list-style-type: none;
+   }

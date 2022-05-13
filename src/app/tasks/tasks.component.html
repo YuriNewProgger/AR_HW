@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of taskList" 
+      (click)="onClick(item)">
+      <s *ngIf="item.isComplete == true">{{item.id}}. Name: {{item.name}}. Is complete: {{item.isComplete}}.</s>
+      <p *ngIf="item.isComplete != true">{{item.id}}. Name: {{item.name | uppercase}}. Is complete: {{item.isComplete}}.</p>
+    </li>
+  </ul>
