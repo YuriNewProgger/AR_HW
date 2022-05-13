@@ -6,16 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { PostsComponent } from './posts/posts.component';
+import { PlaceholderService } from './placeholder.service';
+
 @NgModule({
   declarations: [
     AppComponent,
-    TasksComponent
+    TasksComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [WorklistService],
+  providers: [WorklistService, PlaceholderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

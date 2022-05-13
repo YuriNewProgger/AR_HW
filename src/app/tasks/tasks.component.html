@@ -1,7 +1,9 @@
+<h2>To Do list(This was done in class. Data was get from file json)</h2>
 <ul>
     <li *ngFor="let item of taskList" 
       (click)="onClick(item)">
       <s *ngIf="item.isComplete == true">{{item.id}}. Name: {{item.name}}. Is complete: {{item.isComplete}}.</s>
       <p *ngIf="item.isComplete != true">{{item.id}}. Name: {{item.name | uppercase}}. Is complete: {{item.isComplete}}.</p>
     </li>
-  </ul>
+</ul>
+

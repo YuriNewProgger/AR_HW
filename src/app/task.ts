@@ -4,3 +4,9 @@ export class Task {
     isComplete: boolean = false;
     constructor () {}
    }
+
+export interface Task{
+    id: number;
+    name: string;
+    isComplete: boolean;
+}

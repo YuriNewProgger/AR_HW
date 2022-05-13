@@ -10,12 +10,18 @@ import { WorklistService } from '../worklist.service';
 })
 export class TasksComponent implements OnInit {
 
-  //taskList = ITEMS;
   taskList: Task[] = [];
   constructor(private _workService: WorklistService) { }
 
   ngOnInit(): void {
-    this.taskList = this._workService.getWroklist();
+    //this.taskList = this._workService.getWroklist();
+
+    
+    this._workService.getWorklist().subscribe(data => {
+      console.log(data);
+      
+      this.taskList = data;
+    });
   }
 
   onClick(item: Task) {
